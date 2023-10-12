@@ -6,7 +6,6 @@ function list() {
 
 function read(productId) {
   return knex("products").select("*").where({ product_id: productId }).first();
-  //The first() method returns the first row in the table as an object.
 }
 
 module.exports = {
